@@ -24,7 +24,7 @@ Route.get('/', async function (req, res) {
         },
         {
             name: 'Passion Air',
-            image_url: 'url',
+            image_url: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
             about: 'Passion is a good company',
             websiteUrl: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
             extraImage1: 'url',

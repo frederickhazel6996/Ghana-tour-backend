@@ -10,8 +10,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'AWA',
@@ -21,8 +20,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'Passion Air',
@@ -31,8 +29,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'Uber',
@@ -41,8 +38,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'Bolt',
@@ -51,8 +47,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'Taxi',
@@ -61,8 +56,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         },
         {
             name: 'Trotro',
@@ -71,8 +65,7 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ',
-            icon: Fontawesome.plane
+            rates: 'differ'
         }
     ];
     res.status(200).send(transport);

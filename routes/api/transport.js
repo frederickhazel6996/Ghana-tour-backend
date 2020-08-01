@@ -10,7 +10,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 4.5
         },
         {
             name: 'AWA',
@@ -20,7 +21,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 5
         },
         {
             name: 'Passion Air',
@@ -29,7 +31,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 5
         },
         {
             name: 'Uber',
@@ -38,7 +41,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 4
         },
         {
             name: 'Bolt',
@@ -47,7 +51,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 4
         },
         {
             name: 'Taxi',
@@ -56,7 +61,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 3
         },
         {
             name: 'Trotro',
@@ -65,7 +71,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            ratings: 2.5
         }
     ];
     res.status(200).send(transport);

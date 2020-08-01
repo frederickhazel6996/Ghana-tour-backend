@@ -22,7 +22,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 5
+            ratings: 5.0
         },
         {
             name: 'Passion Air',
@@ -32,7 +32,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 5
+            ratings: 5.0
         },
         {
             name: 'Uber',
@@ -42,7 +42,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 4
+            ratings: 4.0
         },
         {
             name: 'Bolt',
@@ -52,7 +52,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 4
+            ratings: 4.0
         },
         {
             name: 'Taxi',
@@ -62,7 +62,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 3
+            ratings: 3.0
         },
         {
             name: 'Trotro',

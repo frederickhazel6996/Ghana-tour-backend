@@ -3,24 +3,26 @@ const Route = require('express').Router();
 Route.get('/', async function (req, res) {
     let transport = [
         {
-            name: 'STC (State Transport Corporation)',
+            name: 'STC',
             image_url:
                 'https://stc.gov.gh/wp-content/uploads/2017/08/stc-main-logo.jpg',
             about: 'stc is a good company',
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
-            name: 'AWA (African World Airline)',
+            name: 'AWA',
             image_url:
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6lbszF5Gp5sk0YQKYxUdRGcifErdHEgITew&usqp=CAU',
             about: 'AWA is a good company',
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
             name: 'Passion Air',
@@ -29,7 +31,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
             name: 'Uber',
@@ -38,7 +41,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
             name: 'Bolt',
@@ -47,7 +51,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
             name: 'Taxi',
@@ -56,7 +61,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         },
         {
             name: 'Trotro',
@@ -65,7 +71,8 @@ Route.get('/', async function (req, res) {
             websiteUrl: 'url',
             extraImage1: 'url',
             extraImage2: 'url',
-            rates: 'differ'
+            rates: 'differ',
+            icon: Fontawesome.plane
         }
     ];
     res.status(200).send(transport);

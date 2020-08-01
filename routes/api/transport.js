@@ -11,7 +11,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 4.5
+            ratings: '4.5'
         },
         {
             name: 'AWA',
@@ -22,7 +22,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 5.0
+            ratings: '5.0'
         },
         {
             name: 'Passion Air',
@@ -32,7 +32,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 5.0
+            ratings: '5.0'
         },
         {
             name: 'Uber',
@@ -42,7 +42,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 4.0
+            ratings: '4.0'
         },
         {
             name: 'Bolt',
@@ -52,7 +52,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 4.0
+            ratings: '3.8'
         },
         {
             name: 'Taxi',
@@ -62,7 +62,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 3.0
+            ratings: '3.5'
         },
         {
             name: 'Trotro',
@@ -72,7 +72,7 @@ Route.get('/', async function (req, res) {
             extraImage1: 'url',
             extraImage2: 'url',
             rates: 'differ',
-            ratings: 2.5
+            ratings: '2.5'
         }
     ];
     res.status(200).send(transport);

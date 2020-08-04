@@ -5,7 +5,8 @@ Route.get('/', async function (req, res) {
         {
             name: 'Homowo',
             place: 'Accra',
-            image_url: 'url',
+            image_url:
+                'https://dailyguidenetwork.com/wp-content/uploads/2019/08/homowo-festivals-620x406.jpg',
             about: 'Homowo is good',
 
             extraImage1: 'url',
@@ -16,7 +17,8 @@ Route.get('/', async function (req, res) {
         {
             name: 'Fetu Afahye',
             place: 'Cape Coast',
-            image_url: 'url',
+            image_url:
+                'https://dailyguidenetwork.com/wp-content/uploads/2019/08/homowo-festivals-620x406.jpg',
             about: 'Afahye is good',
 
             extraImage1: 'url',
@@ -27,7 +29,8 @@ Route.get('/', async function (req, res) {
         {
             name: 'Hogbetsotso',
             place: 'Ho',
-            image_url: 'url',
+            image_url:
+                'https://dailyguidenetwork.com/wp-content/uploads/2019/08/homowo-festivals-620x406.jpg',
             about: 'Afahye is good',
 
             extraImage1: 'url',

@@ -3,94 +3,29 @@ const Route = require('express').Router();
 Route.get('/', async function (req, res) {
     let food = [
         {
-            name: 'Fufu',
-            image_url: 'url',
-            about: 'Fufu is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Main'
+            name: 'Main Dishes',
+            image_url:
+                'https://www.amascorner.com/wp-content/uploads/2019/09/Waakye-e1567874607770.jpg'
         },
         {
-            name: 'Banku',
-            image_url: 'url',
-            about: 'Banku is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Main'
+            name: 'Soups',
+            image_url:
+                'https://3.bp.blogspot.com/-UToYWi95YSw/VRWuGGVWo_I/AAAAAAAADXw/3fOjwXWAXs8/s1600/DSC_0808.JPG'
         },
         {
-            name: 'Waakye',
-            image_url: 'url',
-            about: 'Waakye is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Main'
+            name: 'Stews',
+            image_url:
+                'https://i.pinimg.com/originals/19/2d/12/192d12d81857b04a9dfdb0d6dcd939f2.jpg'
         },
         {
-            name: 'Jollof',
-            image_url: 'url',
-            about: 'Jollof is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Main'
+            name: 'Drinks',
+            image_url:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8C17sk2SGvpJVKmXWoY2vd33lF-V-vTm6yw&usqp=CAU'
         },
         {
-            name: 'Tuo Zaafi',
-            image_url: 'url',
-            about: 'Tuo Zaafi is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Main'
-        },
-        {
-            name: 'Beans Stew',
-            image_url: 'url',
-            about: 'Beans Stew is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Stew'
-        },
-        {
-            name: 'Garden Eggs Stew',
-            image_url: 'url',
-            about: 'Garden Eggs is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Stew'
-        },
-        {
-            name: 'Groundnut Soup',
-            image_url: 'url',
-            about: 'Groundnut Soup is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Soup'
-        },
-        {
-            name: 'Palm Nut Soup',
-            image_url: 'url',
-            about: 'Palm Nut Soup is good',
-
-            extraImage1: 'url',
-            extraImage2: 'url',
-            ingredients: 'more things',
-            type: 'Soup'
+            name: 'Pastries',
+            image_url:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8C17sk2SGvpJVKmXWoY2vd33lF-V-vTm6yw&usqp=CAU'
         }
     ];
     res.status(200).send(food);

@@ -16,7 +16,7 @@ Route.get('/', async function (req, res) {
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/kempinski/c.JPG',
                 extra2_image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/kempinski/d.JPG',
-                short_name: '',
+                short_name: 'kempinski',
                 place: 'Accra',
                 address: 'Ministries PMB, 66 Gamel Abdul Naseer Ave, Accra',
                 lat: 5.55439,
@@ -45,7 +45,7 @@ Route.get('/', async function (req, res) {
                 pricing: 619,
                 rating: '4.2',
                 contact: '030 274 6600',
-                Website_url: 'no',
+                Website_url: 0,
                 amenities: ['pool', 'spa', 'free parking', 'free wifi']
             },
             {
@@ -87,7 +87,7 @@ Route.get('/', async function (req, res) {
                 pricing: 120,
                 rating: '3.5',
                 contact: '020 594 3802',
-                Website_url: 'no',
+                Website_url: 0,
                 amenities: ['free Wi-Fi', 'free parking']
             },
             {
@@ -130,7 +130,7 @@ Route.get('/', async function (req, res) {
                 pricing: 660,
                 rating: '4.5',
                 contact: '024 320 0283',
-                Website_url: 'no',
+                Website_url: 0,
                 amenities: ['free Wi-Fi', 'free parking']
             },
             {
@@ -165,7 +165,7 @@ Route.get('/', async function (req, res) {
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cocktail/c.JPG',
                 extra2_image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cocktail/d.JPG',
-                short_name: 'Cocktail and Dreams',
+                short_name: 'Cocktail',
                 place: 'Accra',
                 address: 'Naijoe Street, Accra',
                 lat: 5.58253,
@@ -173,7 +173,7 @@ Route.get('/', async function (req, res) {
                 pricing: 365,
                 rating: '4',
                 contact: '056 000 2555',
-                Website_url: 'no',
+                Website_url: 0,
                 amenities: ['free Wi-Fi', 'free parking']
             }
         ]

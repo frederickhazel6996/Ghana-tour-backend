@@ -32,8 +32,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'In the month of November',
             tribe: 'Anlo',
-            lat: 5.7872,
-            lon: -0.8914
+            lat: 5.79473,
+            lon: 0.89728
         },
         {
             event_id: 'EVF3',
@@ -48,8 +48,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: '1st week in September',
             tribe: 'Fantes',
-            lat: 5.1315,
-            lon: 1.2795
+            lat: 5.10535,
+            lon: -1.2466
         },
         {
             event_id: 'EVF4',
@@ -64,8 +64,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: '1st Saturday in May',
             tribe: 'Effutus',
-            lat: 5.3622,
-            lon: 0.6299
+            lat: 5.362229,
+            lon: -0.629892
         },
         {
             event_id: 'EVF5',
@@ -80,8 +80,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'Last week in August',
             tribe: 'Nkusum',
-            lat: 5.2023,
-            lon: 1.0514
+            lat: 5.20913,
+            lon: -1.06058
         },
         {
             event_id: 'EVF6',
@@ -96,8 +96,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'First Tuesday in July ',
             tribe: 'Edina',
-            lat: 5.1053,
-            lon: 1.3421
+            lat: 5.0847,
+            lon: -1.35093
         },
         {
             event_id: 'EVF7',
@@ -112,8 +112,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: '1st week in August',
             tribe: 'Dangme',
-            lat: 5.7797,
-            lon: 0.618
+            lat: 5.7666636,
+            lon: 0.6166642
         },
         {
             event_id: 'EVF8',
@@ -128,14 +128,14 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'Two phases: June/July and September/October',
             tribe: 'Akyem',
-            lat: 5.9296,
-            lon: 0.9725
+            lat: 5.92665,
+            lon: -0.98577
         },
         {
             event_id: 'EVF9',
             region: 'Western Region',
             name: 'Kundum',
-            place: 'Dixcove,Sekondi,Axim,Nsein,Busua',
+            place: 'Sekondi,Axim',
             image_url:
                 'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/kundum.jpg',
             about:
@@ -145,8 +145,8 @@ Route.get('/', async function (req, res) {
             dates:
                 'Varies from town to town, Between June and November (ripening of palm fruit begins celebration)',
             tribe: 'Nzema and Ahanta',
-            lat: 4.9016,
-            lon: 1.7831
+            lat: 4.934,
+            lon: -1.7137
         },
         {
             event_id: 'EVF10',
@@ -161,8 +161,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'Dates range between July and October',
             tribe: 'Ashanti',
-            lat: 6.6666,
-            lon: 1.6163
+            lat: 6.68848,
+            lon: -1.62443
         },
         {
             event_id: 'EVF11',
@@ -177,14 +177,14 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'Last Friday of October',
             tribe: 'Krobo',
-            lat: 6.3651,
-            lon: 0.1121
+            lat: 7.54069,
+            lon: -1.736
         },
         {
             event_id: 'EVF12',
             region: 'Eastern Region',
             name: 'Odwira',
-            place: 'Akropong-Akuapim,Aburi',
+            place: 'Aburi',
             image_url:
                 'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/odwira.jpg',
             about:
@@ -193,8 +193,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'September/ October',
             tribe: 'Akuapim',
-            lat: 5.8512,
-            lon: 0.1729
+            lat: 5.8499,
+            lon: -0.1833
         },
         {
             event_id: 'EVF13',
@@ -209,8 +209,8 @@ Route.get('/', async function (req, res) {
             extraImage2: 'url',
             dates: 'The month of August',
             tribe: 'Agona',
-            lat: 5.5298,
-            lon: 0.7058
+            lat: 5.5249,
+            lon: -0.70166
         },
         {
             event_id: 'EVF14',
@@ -227,7 +227,7 @@ Route.get('/', async function (req, res) {
                 'The first month of the Dagomba calendar, Bugum Choli (October).',
             tribe: 'Dagomba',
             lat: 9.4034,
-            lon: 0.8424
+            lon: -0.8424
         },
         {
             event_id: 'EVF15',
@@ -244,7 +244,7 @@ Route.get('/', async function (req, res) {
                 '11th, 17th and 18th days of Damba month (Between July and August)',
             tribe: 'Mamprusi, Nanumba, Gonja',
             lat: 10.0601,
-            lon: 2.5099
+            lon: -2.5099
         }
     ];
     res.status(200).send(festivals);

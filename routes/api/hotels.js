@@ -322,7 +322,7 @@ Route.get('/', async function (req, res) {
         regional_capital: 'Accra',
         hotels: [
             {
-                name: 'Kempinski Hotel Gold Coast City-',
+                name: 'Kempinski Hotel Gold Coast City',
                 image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/kempinski/a.JPG',
                 extra_image_url:

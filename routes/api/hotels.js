@@ -1,6 +1,278 @@
 const Route = require('express').Router();
 
 Route.get('/', async function (req, res) {
+    const { choose } = req.query;
+    let western = {
+        region: 'Western',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Takoradi',
+        hotels: [
+            {
+                name: 'Best Western Plus Atlantic Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bestwestern/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bestwestern/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bestwestern/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bestwestern/d.JPG',
+                short_name: 'Best Western',
+                place: 'Takoradi',
+                address: 'Beach Road Area, DTD, Takoradi',
+                lat: 4.881915,
+                lon: -1.744109,
+                pricing: 746,
+                rating: '4',
+                contact: '031 200 2700',
+                Website_url: 'www.atlantichoteltakoradi.com',
+                amenities: ['free parking', 'free breakfast', 'pool']
+            },
+
+            {
+                name: 'Axim beach Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/axim/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/axim/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/axim/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/axim/d.JPG',
+                short_name: 'Axim Beach',
+                place: 'Axim',
+                address: 'Axim',
+                lat: 4.850956,
+                lon: -2.234252,
+                pricing: 'call or visit website for rates',
+                rating: '4',
+                contact: '031 209 2397',
+                Website_url: 'www.aximbeach.com',
+                amenities: ['pool', 'free wifi']
+            }
+        ]
+    };
+    let central = {
+        region: 'Central',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Cape Coast',
+        hotels: [
+            {
+                name: 'Ridge Royal Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ridgeroyal/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ridgeroyal/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ridgeroyal/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ridgeroyal/d.JPG',
+                short_name: 'Ridge Royal',
+                place: 'Cape Coast',
+                address: 'Residential Rd, No.1 Second Ridge, Cape Coast',
+                lat: 5.123035,
+                lon: -1.251561,
+                pricing: 955,
+                rating: '4',
+                contact: '031 200 3222',
+                Website_url: 'www.ridgeroyalhotel.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+
+            {
+                name: 'Coconut Grove Beach Resort',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/d.JPG',
+                short_name: 'Coconut Grove Beach',
+                place: 'Elmina',
+                address: 'Mmoframa Akyinim, Elmina',
+                lat: 5.07844,
+                lon: -1.370874,
+                pricing: '1014',
+                rating: '4',
+                contact: '024 433 3001',
+                Website_url: 'www.coconutgrovehotelsghana.com',
+                amenities: ['pool', 'free wifi']
+            }
+        ]
+    };
+
+    let volta = {
+        region: 'Volta',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Ho',
+        hotels: [
+            {
+                name: 'Volta Serene Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/serene/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/serene/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/serene/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/serene/d.JPG',
+                short_name: 'Volta Serene',
+                place: 'Ho',
+                address: 'Kabakaba Hills, Ho',
+                lat: 6.615083,
+                lon: 0.454743,
+                pricing: 720,
+                rating: '4',
+                contact: '036 202 5243',
+                Website_url: 'www.voltaserenehotel.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+
+            {
+                name: 'Sogakope Beach Resort',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sogakope/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sogakope/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sogakope/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sogakope/d.JPG',
+                short_name: 'Sogakope Beach ',
+                place: 'Sogakope',
+                address: 'Sogakope',
+                lat: 5.966339,
+                lon: 0.618221,
+                pricing: 'call for rates',
+                rating: '4',
+                contact: '036 219 6320',
+                Website_url: 'www.sogakopebeach.com',
+                amenities: ['free parking', 'free wifi']
+            }
+        ]
+    };
+
+    let eastern = {
+        region: 'Eastern',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Koforidua',
+        hotels: [
+            {
+                name: 'The Royal Senchi Resort',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/senchi/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/senchi/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/senchi/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/senchi/d.JPG',
+                short_name: 'Royal Senchi',
+                place: 'Akosombo',
+                address: 'Senchi Ferry Road, Akosombo',
+                lat: 6.21992,
+                lon: 0.089136,
+                pricing: 940,
+                rating: '4.5',
+                contact: '030 340 9170',
+                Website_url: 'www.theroyalsenchi.com',
+                amenities: ['free parking', 'free wifi', 'pool', 'spa']
+            },
+            {
+                name: 'Peduase Valley Resort',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/peduase/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/peduase/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/peduase/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/peduase/d.JPG',
+                short_name: 'Peduase Valley',
+                place: 'Peduase ',
+                address: 'Ankama Close, Peduase',
+                lat: 5.808752,
+                lon: -0.185898,
+                pricing: 'Call or Visit site for rates',
+                rating: '4.5',
+                contact: '054 012 555',
+                Website_url: 'www.peduase-valley-resort.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+
+            {
+                name: 'The Float',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/float/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/float/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/float/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/float/d.JPG',
+                short_name: 'The Float',
+                place: 'Akosombo',
+                address: '100 Marine Drive, Akosombo ',
+                lat: 6.298622,
+                lon: 0.031171,
+                pricing: 'Call for Rates',
+                rating: '3',
+                contact: '020 210 9793',
+                Website_url: 'www.thefloat.business.site',
+                amenities: [
+                    'free parking',
+                    'free wifi',
+                    'pool',
+                    'free breakfast'
+                ]
+            },
+
+            {
+                name: 'Afrikiko River Front Resort',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/afrikiko/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/afrikiko/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/afrikiko/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/afrikiko/d.JPG',
+                short_name: 'Afrikiko River Front',
+                place: 'Akosombo',
+                address: '100 Marine Drive, Akosombo ',
+                lat: 6.26904,
+                lon: 0.076278,
+                pricing: 634,
+                rating: '3',
+                contact: '024 262 5624',
+                Website_url: 'www.afrikikoresort.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+            {
+                name: 'Hillburi',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/hillburi/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/hillburi/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/hillburi/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/hillburi/d.JPG',
+                short_name: 'Hillburi',
+                place: 'Aburi',
+                address: 'Aburi',
+                lat: 5.827953,
+                lon: -0.184679,
+                pricing: 'Call or Visit Website for rates',
+                rating: '4',
+                contact: '055 252 6303',
+                Website_url: 'www.hillburi.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            }
+        ]
+    };
     let northern = {
         region: 'Northern',
         image_url: 'assets/images/o.jpg',
@@ -766,8 +1038,24 @@ Route.get('/', async function (req, res) {
             }
         ]
     };
+    if (choose == 1) return res.status(200).send(greaterAccra);
+    if (choose == 2) return res.status(200).send(central);
+    if (choose == 3) return res.status(200).send(western);
+    if (choose == 4) return res.status(200).send(eastern);
+    if (choose == 5) return res.status(200).send(northEast);
+    if (choose == 6) return res.status(200).send(northern);
+    if (choose == 7) return res.status(200).send(upperEast);
+    if (choose == 8) return res.status(200).send(bono);
+    if (choose == 9) return res.status(200).send(upperWest);
+    if (choose == 10) return res.status(200).send(bonoEast);
+    if (choose == 11) return res.status(200).send(ahafo);
+    if (choose == 12) return res.status(200).send(volta);
+    if (choose == 13) return res.status(200).send(oti);
+    if (choose == 14) return res.status(200).send(savannah);
+    if (choose == 15) return res.status(200).send(westernNorth);
+    if (choose == 16) return res.status(200).send(ashanti);
 
-    res.status(200).send(greaterAccra);
+    return res.status(400).send('none');
 });
 
 module.exports = Route;

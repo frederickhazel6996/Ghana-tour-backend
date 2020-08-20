@@ -595,13 +595,13 @@ Route.get('/', async function (req, res) {
             {
                 name: 'Mövenpick A. Hotel',
                 image_url:
-                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/a.JPG',
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/a.jpg',
                 extra_image_url:
-                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/b.JPG',
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/b.jpg',
                 extra1_image_url:
-                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/c.JPG',
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/c.jpg',
                 extra2_image_url:
-                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/d.JPG',
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/d.jpg',
                 short_name: 'Mövenpick A.',
                 place: 'Accra',
                 address: 'Ministries PMB, 66 Gamel Abdul Naseer Ave, Accra',

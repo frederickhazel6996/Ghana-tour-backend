@@ -5,7 +5,7 @@ Route.get('/', async function (req, res) {
         {
             name: 'STC',
             image_url:
-                'https://stc.gov.gh/wp-content/uploads/2017/08/stc-main-logo.jpg',
+                'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/transport/stc.jpg',
             routes_extra:
                 'Intercity STC plies mostly regional capitals in Ghana including',
             local_routes: [
@@ -49,7 +49,7 @@ Route.get('/', async function (req, res) {
             ],
             type: 'plane',
             image_url:
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6lbszF5Gp5sk0YQKYxUdRGcifErdHEgITew&usqp=CAU',
+                'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/transport/awa.jpg',
             about:
                 'Africa World Airlines Limited (AWA) is a Ghanaian airline company with its head office in Accra, Ghana and its main hub at Kotoka International Airport in Accra.',
             websiteUrl: 'https://www.flyafricaworld.com/',
@@ -62,7 +62,8 @@ Route.get('/', async function (req, res) {
             name: 'Passion Air',
             local_routes: ['Accra (Ghana)', 'Kumasi (Ghana)', 'Tamale (Ghana)'],
             international_routes: [],
-            image_url: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
+            image_url:
+                'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/transport/passion.jpg',
             about:
                 'PassionAir is a domestic airline of Ghana with its head office in Accra, Ghana, and its main hub at Kotoka International Airport in Accra. It is the largest airline in Ghana based upon single aircraft passenger seating capacity.',
             websiteUrl: 'https://flypassionair.com/',
@@ -120,7 +121,7 @@ Route.get('/', async function (req, res) {
             international_routes: [],
             type: 'bus',
             image_url:
-                'https://ocdn.eu/images/pulscms/YTk7MDA_/02a41dc91704dd771eac8b861ca70871.jpg',
+                'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/transport/trotro.jpg',
             about: `Trotro's are commercial mini van's that transport people within cities and towns`,
             websiteUrl: 'url',
             extraImage1: 'url',

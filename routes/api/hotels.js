@@ -89,7 +89,7 @@ Route.get('/', async function (req, res) {
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/c.JPG',
                 extra2_image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/coconut/d.JPG',
-                short_name: 'Coconut Grove Beach',
+                short_name: 'Coconut Grove',
                 place: 'Elmina',
                 address: 'Mmoframa Akyinim, Elmina',
                 lat: 5.07844,

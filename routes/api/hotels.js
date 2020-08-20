@@ -1,6 +1,256 @@
 const Route = require('express').Router();
 
 Route.get('/', async function (req, res) {
+    let northern = {
+        region: 'Northern',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Tamale',
+        hotels: [
+            {
+                name: 'Zaina Lodge',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/zaina/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/zaina/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/zaina/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/zaina/d.JPG',
+                short_name: 'Zaina Lodge',
+                place: 'Tamale',
+                address: '1 Yagbon Loop, Mole National Park, Tamale',
+                lat: 9.296264,
+                lon: -1.850046,
+                pricing: 'call for rates',
+                rating: '3',
+                contact: '054 011 1506',
+                Website_url: 'www.zainalodge-ghana.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+
+            {
+                name: 'Jeyads Lodge',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/jeyads/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/jeyads/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/jeyads/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/dentis/d.JPG',
+                short_name: 'Jeyads Lodge',
+                place: 'Tamale',
+                address:
+                    '200 metres from the Vittin Police Barrier, Yendi-Salaga Rd, Tamale ',
+                lat: 9.3817,
+                lon: -0.795009,
+                pricing: 297,
+                rating: '3',
+                contact: ' 055 255 9442',
+                Website_url: 'www.jeyadslodge.com',
+                amenities: ['free parking', 'free wifi']
+            }
+        ]
+    };
+    let upperEast = {
+        region: 'Upper East',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Bolgatanga',
+        hotels: [
+            {
+                name: 'Blue Sky Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bluesky/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bluesky/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bluesky/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/bluesky/d.JPG',
+                short_name: 'Blue Sky',
+                place: 'Zuarungu',
+                address: 'Bolgatanga-Zebilla Rd, Zuarungu',
+                lat: 10.79201,
+                lon: -0.812856,
+                pricing: 135,
+                rating: '3',
+                contact: '020 638 2033',
+                Website_url: 'www.blueskyhotelgh.com',
+                amenities: ['free parking', 'free wifi', 'pool']
+            },
+
+            {
+                name: 'Akayet Hotels LTD.',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/akayet/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/akayet/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/akayet/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/akayet/d.JPG',
+                short_name: 'Akayet',
+                place: 'Bolgatanga',
+                address: 'BOlgatanga',
+                lat: 10.810709,
+                lon: -0.896597,
+                pricing: 'call for rates',
+                rating: '3',
+                contact: '038 202 4680',
+                Website_url: 'www.akayethotel.com',
+                amenities: ['free parking', 'free wifi']
+            }
+        ]
+    };
+    let upperWest = {
+        region: 'Upper West',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Wa',
+        hotels: [
+            {
+                name: 'Royal Cosy Hills ',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cosy/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cosy/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cosy/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/cosy/d.JPG',
+                short_name: 'Royal Cosy Hills ',
+                place: 'Jirapa',
+                address: 'Jirapa ',
+                lat: 10.524065,
+                lon: -2.703274,
+                pricing: '648',
+                rating: '3',
+                contact: '050 169 4286',
+                Website_url: 'no',
+                amenities: ['bar']
+            },
+
+            {
+                name: 'Pelican Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/dentis/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/dentis/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/dentis/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/dentis/d.JPG',
+                short_name: 'Pelican',
+                place: 'Wa',
+                address: 'Wa',
+                lat: 10.038048,
+                lon: -2.485025,
+                pricing: 'call for rates',
+                rating: '3',
+                contact: '054 465 5699',
+                Website_url: 'no',
+                amenities: ['free parking', 'free wifi']
+            }
+        ]
+    };
+    let ahafo = {
+        region: 'Ahafo',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Goaso',
+        hotels: [
+            {
+                name: 'Hotel De Baps ',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/baps/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/baps/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/baps/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/baps/d.JPG',
+                short_name: 'De Baps',
+                place: 'Hwidiem',
+                address: 'Tepa-Goaso Rd, Hwidiem',
+                lat: 6.930826,
+                lon: -2.363825,
+                pricing: 'call for rates',
+                rating: '0',
+                contact: '050 279 4219',
+                Website_url: 'no',
+                amenities: ['bar']
+            },
+
+            {
+                name: 'Sambra Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sambra/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sambra/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sambra/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/sambra/d.JPG',
+                short_name: 'Sambra',
+                place: 'Hwidiem',
+                address: 'Tepa-Goaso Rd, Hwidiem',
+                lat: 6.927916,
+                lon: -2.365474,
+                pricing: 'call for rates',
+                rating: '0',
+                contact: '024 442 9529',
+                Website_url: 'www.hotelsanbra.com',
+                amenities: ['free parking']
+            }
+        ]
+    };
+    let oti = {
+        region: 'Oti',
+        image_url: 'assets/images/o.jpg',
+        regional_capital: 'Dambai',
+        hotels: [
+            {
+                name: 'Joliz Hotel ',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/joliz/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/joliz/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/joliz/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/joliz/d.JPG',
+                short_name: 'Joliz',
+                place: 'Jasikan',
+                address: 'Road Behind ECG, Okajakrom, Jasikan ',
+                lat: 7.419987,
+                lon: 0.466123,
+                pricing: 'call for rates',
+                rating: '0',
+                contact: '050 405 1460 ',
+                Website_url: 'no',
+                amenities: ['free parking', 'free wifi']
+            },
+            {
+                name: 'Royal Lake View Hotel ',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/lakeview/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/lakeview/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/lakeview/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/lakeview/d.JPG',
+                short_name: 'Royal Lake View',
+                place: 'Kete',
+                address: 'VS-0019-1391, Kete',
+                lat: 7.829548,
+                lon: -0.018587,
+                pricing: 'call or visit website for rates',
+                rating: '0',
+                contact: '020 817 3739',
+                Website_url: 'www.royallakeviewhotel.com',
+                amenities: ['free parking']
+            }
+        ]
+    };
     let northEast = {
         region: 'North East',
         image_url: 'assets/images/o.jpg',
@@ -343,6 +593,29 @@ Route.get('/', async function (req, res) {
                 amenities: ['pool', 'spa', 'free wifi']
             },
             {
+                name: 'Mövenpick A. Hotel',
+                image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/a.JPG',
+                extra_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/b.JPG',
+                extra1_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/c.JPG',
+                extra2_image_url:
+                    'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/movenpick/d.JPG',
+                short_name: 'Mövenpick A.',
+                place: 'Accra',
+                address: 'Ministries PMB, 66 Gamel Abdul Naseer Ave, Accra',
+                lat: 5.5557,
+                lon: -0.1963,
+                pricing: 1000,
+                rating: '4.5',
+                contact: '030 261 1000',
+                Website_url:
+                    'https://www.movenpick.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra/overview/',
+                amenities: ['pool', 'bar', 'restaurants', 'free wifi']
+            },
+
+            {
                 name: 'Ibis Styles Accra Airport Hotel',
                 image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ibis/a.JPG',
@@ -494,7 +767,7 @@ Route.get('/', async function (req, res) {
         ]
     };
 
-    res.status(200).send(ashanti);
+    res.status(200).send(greaterAccra);
 });
 
 module.exports = Route;

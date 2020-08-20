@@ -77,7 +77,8 @@ Route.get('/', async function (req, res) {
             name: 'Uber',
             local_routes: ['Within Accra', 'Within Kumasi', 'within Takoradi'],
             international_routes: [],
-            image_url: 'https://cdn.jetphotos.com/400/6/43022_1550091376.jpg',
+            image_url:
+                'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/transport/passion.jpg',
             about:
                 'Uber Technologies, Inc., commonly known as Uber, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing, ride service hailing, food delivery (Uber Eats), and a micromobility system with electric bikes and scooters. The company is based in San Francisco and has operations in over 785 metropolitan areas worldwide.Its platforms can be accessed via its websites and mobile apps.',
             websiteUrl: 'https://www.uber.com/gh/en/',

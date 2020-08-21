@@ -71,7 +71,7 @@ Route.post(
                             user,
                             process.env.ACCESS_TOKEN_SECRET
                         );
-                        res.status(200).json({
+                        res.status(201).json({
                             access_token: access_token,
                             first_name: first_name,
                             last_name: last_name,

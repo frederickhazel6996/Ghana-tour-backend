@@ -981,8 +981,8 @@ Route.get('/', async function (req, res) {
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ada/c.JPG',
                 extra2_image_url:
                     'https://drake6996.s3.us-east-2.amazonaws.com/ghana_tour/hotels/ada/d.JPG',
-                short_name: 'Accra City',
-                place: 'Accra',
+                short_name: 'Ada Safari',
+                place: 'Ada',
                 address: 'P.O. Box AF32, Big Ada, Ada Foah, Accra',
                 lat: 5.827354,
                 lon: 0.613375,
